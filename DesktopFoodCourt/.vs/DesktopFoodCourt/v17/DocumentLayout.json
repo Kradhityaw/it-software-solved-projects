@@ -1,0 +1,483 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\viewreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\viewreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\tableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\tableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\tableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\tableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopfoodcourt\\views\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopfoodcourt\\views\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\reservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\reservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopfoodcourt\\views\\reservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\reservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\viewreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\viewreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\managemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\managemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\managemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\managemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\managemenuingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\managemenuingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\managemenuingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\managemenuingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\adminmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\adminmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\managemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\managemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\managemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\managemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\alerts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:alerts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopfoodcourt\\views\\managemember.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\managemember.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\membermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\membermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\membermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\membermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\adminmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\adminmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\views\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:views\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\models.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{E6B23713-AD9E-4945-8F1C-2E9198E506C1}|DesktopFoodCourt.csproj|solutionrelative:models.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReserveTable.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ReserveTable.cs",
+              "RelativeDocumentMoniker": "Views\\ReserveTable.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ReserveTable.cs [Design]",
+              "RelativeToolTip": "Views\\ReserveTable.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T03:18:01.329Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReserveTable.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ReserveTable.cs",
+              "RelativeDocumentMoniker": "Views\\ReserveTable.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ReserveTable.cs",
+              "RelativeToolTip": "Views\\ReserveTable.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAvwNkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T03:25:29.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "History.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\History.cs",
+              "RelativeDocumentMoniker": "Views\\History.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\History.cs [Design]",
+              "RelativeToolTip": "Views\\History.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:32:19.215Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "History.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\History.cs",
+              "RelativeDocumentMoniker": "Views\\History.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\History.cs",
+              "RelativeToolTip": "Views\\History.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAvwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T11:36:39.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Login.cs",
+              "RelativeDocumentMoniker": "Views\\Login.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Login.cs [Design]",
+              "RelativeToolTip": "Views\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:01:39.427Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Login.cs",
+              "RelativeDocumentMoniker": "Views\\Login.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Login.cs",
+              "RelativeToolTip": "Views\\Login.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAvwBoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:07:01.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TableUC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\TableUC.cs",
+              "RelativeDocumentMoniker": "Views\\TableUC.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\TableUC.cs [Design]",
+              "RelativeToolTip": "Views\\TableUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T02:17:15.476Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TableUC.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\TableUC.cs",
+              "RelativeDocumentMoniker": "Views\\TableUC.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\TableUC.cs",
+              "RelativeToolTip": "Views\\TableUC.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T02:26:37.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VIewReservation.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\VIewReservation.cs",
+              "RelativeDocumentMoniker": "Views\\VIewReservation.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\VIewReservation.cs [Design]",
+              "RelativeToolTip": "Views\\VIewReservation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T02:15:10.127Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VIewReservation.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\VIewReservation.cs",
+              "RelativeDocumentMoniker": "Views\\VIewReservation.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\VIewReservation.cs",
+              "RelativeToolTip": "Views\\VIewReservation.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAADgv3MAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T02:18:39.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManageMenuIngredients.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMenuIngredients.cs",
+              "RelativeDocumentMoniker": "Views\\ManageMenuIngredients.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMenuIngredients.cs",
+              "RelativeToolTip": "Views\\ManageMenuIngredients.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAEwKsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T00:40:30.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ManageMenuIngredients.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMenuIngredients.cs",
+              "RelativeDocumentMoniker": "Views\\ManageMenuIngredients.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMenuIngredients.cs [Design]",
+              "RelativeToolTip": "Views\\ManageMenuIngredients.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T00:37:34.328Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ManageMenu.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMenu.cs",
+              "RelativeDocumentMoniker": "Views\\ManageMenu.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMenu.cs",
+              "RelativeToolTip": "Views\\ManageMenu.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAEwLIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T23:28:04.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ManageMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMenu.cs",
+              "RelativeDocumentMoniker": "Views\\ManageMenu.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMenu.cs [Design]",
+              "RelativeToolTip": "Views\\ManageMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:07:37.715Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\AdminMain.cs",
+              "RelativeDocumentMoniker": "Views\\AdminMain.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\AdminMain.cs [Design]",
+              "RelativeToolTip": "Views\\AdminMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:58:21.523Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ManageMember.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMember.cs",
+              "RelativeDocumentMoniker": "Views\\ManageMember.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMember.cs [Design]",
+              "RelativeToolTip": "Views\\ManageMember.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T14:03:35.391Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ManageMember.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMember.cs",
+              "RelativeDocumentMoniker": "Views\\ManageMember.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMember.cs",
+              "RelativeToolTip": "Views\\ManageMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T14:04:22.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Alerts.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Alerts.cs",
+              "RelativeDocumentMoniker": "Alerts.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Alerts.cs",
+              "RelativeToolTip": "Alerts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:25:12.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Session.cs",
+              "RelativeDocumentMoniker": "Session.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Session.cs",
+              "RelativeToolTip": "Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:32:37.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:01:43.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ManageMember.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMember.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\ManageMember.Designer.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\ManageMember.Designer.cs",
+              "RelativeToolTip": "Views\\ManageMember.Designer.cs",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAmwJEBAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T12:31:53.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Register.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Register.cs",
+              "RelativeDocumentMoniker": "Views\\Register.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Register.cs [Design]",
+              "RelativeToolTip": "Views\\Register.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:33:31.818Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MemberMain.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\MemberMain.cs",
+              "RelativeDocumentMoniker": "Views\\MemberMain.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\MemberMain.cs",
+              "RelativeToolTip": "Views\\MemberMain.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAvwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T03:12:05.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MemberMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\MemberMain.cs",
+              "RelativeDocumentMoniker": "Views\\MemberMain.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\MemberMain.cs [Design]",
+              "RelativeToolTip": "Views\\MemberMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T03:07:08.254Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Register.cs",
+              "RelativeDocumentMoniker": "Views\\Register.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Register.cs",
+              "RelativeToolTip": "Views\\Register.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAvwCwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:42:04.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AdminMain.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\AdminMain.cs",
+              "RelativeDocumentMoniker": "Views\\AdminMain.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\AdminMain.cs",
+              "RelativeToolTip": "Views\\AdminMain.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAArwDEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T14:00:26.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\Login.Designer.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Views\\Login.Designer.cs",
+              "RelativeToolTip": "Views\\Login.Designer.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAADgvzIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:35:24.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Models.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Models.edmx",
+              "RelativeDocumentMoniker": "Models.edmx",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopFoodCourt\\Models.edmx [Diagram1]",
+              "RelativeToolTip": "Models.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-12-12T13:22:05.797Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
