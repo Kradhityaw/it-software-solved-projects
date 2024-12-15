@@ -87,7 +87,7 @@ namespace DesktopFoodCourt.Views
             db.SaveChanges();
 
             Session.us = user;
-            new Program.AppContex(new AdminMain());
+            new Program.AppContex(new MemberMain());
             Close();
         }
 
