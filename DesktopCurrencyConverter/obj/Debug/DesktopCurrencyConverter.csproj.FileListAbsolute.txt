@@ -1,0 +1,15 @@
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\bin\Debug\DesktopCurrencyConverter.exe.config
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\bin\Debug\DesktopCurrencyConverter.exe
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\bin\Debug\DesktopCurrencyConverter.pdb
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\bin\Debug\EntityFramework.dll
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\bin\Debug\EntityFramework.xml
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\obj\Debug\DesktopCurrencyConverter.csproj.AssemblyReference.cache
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\obj\Debug\DesktopCurrencyConverter.Properties.Resources.resources
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\obj\Debug\DesktopCurrencyConverter.csproj.GenerateResource.cache
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\obj\Debug\DesktopCurrencyConverter.csproj.CoreCompileInputs.cache
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\obj\Debug\DesktopC.279DCEA0.Up2Date
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\obj\Debug\DesktopCurrencyConverter.exe
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\obj\Debug\DesktopCurrencyConverter.pdb
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopCurrencyConverter\obj\Debug\DesktopCurrencyConverter.Form1.resources
