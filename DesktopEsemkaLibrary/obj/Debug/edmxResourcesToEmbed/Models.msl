@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EsemkaLibraryModelStoreContainer" CdmEntityContainer="EsemkaLibraryEntities">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="EsemkaLibraryModel.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="publish_date" ColumnName="publish_date" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookGenres">
+      <EntityTypeMapping TypeName="EsemkaLibraryModel.BookGenre">
+        <MappingFragment StoreEntitySet="BookGenre">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="book_id" ColumnName="book_id" />
+          <ScalarProperty Name="genre_id" ColumnName="genre_id" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Borrowings">
+      <EntityTypeMapping TypeName="EsemkaLibraryModel.Borrowing">
+        <MappingFragment StoreEntitySet="Borrowing">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="member_id" ColumnName="member_id" />
+          <ScalarProperty Name="book_id" ColumnName="book_id" />
+          <ScalarProperty Name="borrow_date" ColumnName="borrow_date" />
+          <ScalarProperty Name="return_date" ColumnName="return_date" />
+          <ScalarProperty Name="fine" ColumnName="fine" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="EsemkaLibraryModel.Genre">
+        <MappingFragment StoreEntitySet="Genre">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="EsemkaLibraryModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

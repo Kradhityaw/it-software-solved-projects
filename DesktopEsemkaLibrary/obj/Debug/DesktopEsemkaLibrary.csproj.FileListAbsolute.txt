@@ -1,0 +1,16 @@
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\bin\Debug\DesktopEsemkaLibrary.exe.config
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\bin\Debug\DesktopEsemkaLibrary.exe
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\bin\Debug\DesktopEsemkaLibrary.pdb
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\bin\Debug\EntityFramework.dll
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\bin\Debug\EntityFramework.xml
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopEsemkaLibrary.csproj.AssemblyReference.cache
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopEsemkaLibrary.Properties.Resources.resources
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopEsemkaLibrary.csproj.GenerateResource.cache
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopEsemkaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopE.46282BCC.Up2Date
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopEsemkaLibrary.exe
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopEsemkaLibrary.pdb
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopEsemkaLibrary.Views.Main.resources
+C:\Users\SMKN 1 BONDOWOSO\source\repos\DesktopEsemkaLibrary\obj\Debug\DesktopEsemkaLibrary.Views.Borrow.resources

@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopesemkalibrary\\views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|solutionrelative:views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopesemkalibrary\\views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|solutionrelative:views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopesemkalibrary\\views\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|solutionrelative:views\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopesemkalibrary\\views\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|solutionrelative:views\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopesemkalibrary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopesemkalibrary\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|solutionrelative:session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopesemkalibrary\\models.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{237A2582-8456-4214-8835-E6D430B9B860}|DesktopEsemkaLibrary.csproj|solutionrelative:models.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Borrow.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Views\\Borrow.cs",
+              "RelativeDocumentMoniker": "Views\\Borrow.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Views\\Borrow.cs",
+              "RelativeToolTip": "Views\\Borrow.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAEwGAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T07:22:43.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Borrow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Views\\Borrow.cs",
+              "RelativeDocumentMoniker": "Views\\Borrow.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Views\\Borrow.cs [Design]",
+              "RelativeToolTip": "Views\\Borrow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T07:18:02.145Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Session.cs",
+              "RelativeDocumentMoniker": "Session.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Session.cs",
+              "RelativeToolTip": "Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T06:21:44.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Views\\Main.cs",
+              "RelativeDocumentMoniker": "Views\\Main.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Views\\Main.cs*",
+              "RelativeToolTip": "Views\\Main.cs*",
+              "ViewState": "AgIAAEMAAAAAAAAAAADgv1UAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T06:19:57.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T06:10:08.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Views\\Main.cs",
+              "RelativeDocumentMoniker": "Views\\Main.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Views\\Main.cs [Design]*",
+              "RelativeToolTip": "Views\\Main.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T06:10:00.769Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Models.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Models.edmx",
+              "RelativeDocumentMoniker": "Models.edmx",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopEsemkaLibrary\\Models.edmx [Diagram1]",
+              "RelativeToolTip": "Models.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-12-15T06:07:37.916Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
