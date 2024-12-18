@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/quizName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz Name"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/gray"
+                android:id="@+id/quizCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz Name"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quizPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Players"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
