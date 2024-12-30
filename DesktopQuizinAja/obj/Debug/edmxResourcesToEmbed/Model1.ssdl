@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizinAjaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Participant">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuizID" Type="int" Nullable="false" />
+    <Property Name="ParticipantNickname" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ParticipationDate" Type="datetime" Nullable="false" />
+    <Property Name="TimeTaken" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParticipantAnswer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParticipantID" Type="int" Nullable="false" />
+    <Property Name="QuestionID" Type="int" Nullable="false" />
+    <Property Name="Answer" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuizID" Type="int" Nullable="false" />
+    <Property Name="Question" Type="text" Nullable="false" />
+    <Property Name="OptionA" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="OptionB" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="OptionC" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="OptionD" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CorrectAnswer" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Quiz">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Description" Type="text" Nullable="false" />
+    <Property Name="CreatedAt" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="DateOfBirth" Type="date" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Question_Quiz_QuizID">
+    <End Role="Quiz" Type="Self.Quiz" Multiplicity="1" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Quiz">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="QuizID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Quiz_User_UserID">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Quiz" Type="Self.Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Quiz">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuizParticipant_Quiz_QuizID">
+    <End Role="Quiz" Type="Self.Quiz" Multiplicity="1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Quiz">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="QuizID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuizParticipantAnswer_Participant_ParticipantID">
+    <End Role="Participant" Type="Self.Participant" Multiplicity="1" />
+    <End Role="ParticipantAnswer" Type="Self.ParticipantAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participant">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ParticipantAnswer">
+        <PropertyRef Name="ParticipantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuizParticipantAnswer_Question_QuestionID">
+    <End Role="Question" Type="Self.Question" Multiplicity="1" />
+    <End Role="ParticipantAnswer" Type="Self.ParticipantAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ParticipantAnswer">
+        <PropertyRef Name="QuestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuizinAjaModelStoreContainer">
+    <EntitySet Name="Participant" EntityType="Self.Participant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParticipantAnswer" EntityType="Self.ParticipantAnswer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Question" EntityType="Self.Question" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Quiz" EntityType="Self.Quiz" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Question_Quiz_QuizID" Association="Self.FK_Question_Quiz_QuizID">
+      <End Role="Quiz" EntitySet="Quiz" />
+      <End Role="Question" EntitySet="Question" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quiz_User_UserID" Association="Self.FK_Quiz_User_UserID">
+      <End Role="User" EntitySet="User" />
+      <End Role="Quiz" EntitySet="Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuizParticipant_Quiz_QuizID" Association="Self.FK_QuizParticipant_Quiz_QuizID">
+      <End Role="Quiz" EntitySet="Quiz" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuizParticipantAnswer_Participant_ParticipantID" Association="Self.FK_QuizParticipantAnswer_Participant_ParticipantID">
+      <End Role="Participant" EntitySet="Participant" />
+      <End Role="ParticipantAnswer" EntitySet="ParticipantAnswer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuizParticipantAnswer_Question_QuestionID" Association="Self.FK_QuizParticipantAnswer_Question_QuestionID">
+      <End Role="Question" EntitySet="Question" />
+      <End Role="ParticipantAnswer" EntitySet="ParticipantAnswer" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

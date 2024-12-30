@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopCurrencyConverter\\",
+  "WorkspaceRootPath": "C:\\Users\\SMKN 1 BONDOWOSO\\Documents\\K\u0027\\bismillah-juara-1\\DesktopCurrencyConverter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0ED52134-BBA7-49D9-942A-6C9291C69006}|DesktopCurrencyConverter.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopcurrencyconverter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0ED52134-BBA7-49D9-942A-6C9291C69006}|DesktopCurrencyConverter.csproj|c:\\users\\smkn 1 bondowoso\\documents\\k\u0027\\bismillah-juara-1\\desktopcurrencyconverter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0ED52134-BBA7-49D9-942A-6C9291C69006}|DesktopCurrencyConverter.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ED52134-BBA7-49D9-942A-6C9291C69006}|DesktopCurrencyConverter.csproj|c:\\users\\smkn 1 bondowoso\\source\\repos\\desktopcurrencyconverter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0ED52134-BBA7-49D9-942A-6C9291C69006}|DesktopCurrencyConverter.csproj|C:\\Users\\SMKN 1 BONDOWOSO\\Documents\\K\u0027\\bismillah-juara-1\\DesktopCurrencyConverter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0ED52134-BBA7-49D9-942A-6C9291C69006}|DesktopCurrencyConverter.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopCurrencyConverter\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\Documents\\K\u0027\\bismillah-juara-1\\DesktopCurrencyConverter\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopCurrencyConverter\\Form1.cs",
+              "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\Documents\\K\u0027\\bismillah-juara-1\\DesktopCurrencyConverter\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCAAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T12:31:15.904Z",
               "EditorCaption": ""
@@ -37,13 +37,12 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopCurrencyConverter\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\SMKN 1 BONDOWOSO\\Documents\\K\u0027\\bismillah-juara-1\\DesktopCurrencyConverter\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\SMKN 1 BONDOWOSO\\source\\repos\\DesktopCurrencyConverter\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\DesktopCurrencyConverter\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T12:27:04.098Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-15T12:27:04.098Z"
             }
           ]
         }
