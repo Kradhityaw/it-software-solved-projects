@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HovLibraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="language_id" Type="Int32" Nullable="false" />
+    <Property Name="publisher_id" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="authors" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isbn" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isbn13" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="number_of_pages" Type="Int32" Nullable="false" />
+    <Property Name="publication_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ratings_count" Type="Int32" Nullable="false" />
+    <Property Name="average_rating" Type="Double" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Language" Relationship="Self.FK__Book__language_i__35BCFE0A" FromRole="Book" ToRole="Language" />
+    <NavigationProperty Name="Publisher" Relationship="Self.FK__Book__publisher___36B12243" FromRole="Book" ToRole="Publisher" />
+    <NavigationProperty Name="BookDetails" Relationship="Self.FK__BookDetai__book___3A81B327" FromRole="Book" ToRole="BookDetails" />
+  </EntityType>
+  <EntityType Name="BookDetails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="book_id" Type="Int32" Nullable="false" />
+    <Property Name="location_id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Book" Relationship="Self.FK__BookDetai__book___3A81B327" FromRole="BookDetails" ToRole="Book" />
+    <NavigationProperty Name="Location" Relationship="Self.FK__BookDetai__locat__3B75D760" FromRole="BookDetails" ToRole="Location" />
+    <NavigationProperty Name="Borrowing" Relationship="Self.FK__Borrowing__bookd__412EB0B6" FromRole="BookDetails" ToRole="Borrowing" />
+  </EntityType>
+  <EntityType Name="Borrowing">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="member_id" Type="Int32" Nullable="false" />
+    <Property Name="bookdetails_id" Type="Int32" Nullable="false" />
+    <Property Name="borrow_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="return_date" Type="DateTime" Precision="3" />
+    <Property Name="fine" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BookDetails" Relationship="Self.FK__Borrowing__bookd__412EB0B6" FromRole="Borrowing" ToRole="BookDetails" />
+    <NavigationProperty Name="Member" Relationship="Self.FK__Borrowing__membe__403A8C7D" FromRole="Borrowing" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone_number" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date_of_birth" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="long_text" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Book" Relationship="Self.FK__Book__language_i__35BCFE0A" FromRole="Language" ToRole="Book" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BookDetails" Relationship="Self.FK__BookDetai__locat__3B75D760" FromRole="Location" ToRole="BookDetails" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone_number" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="city_of_birth" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date_of_birth" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Borrowing" Relationship="Self.FK__Borrowing__membe__403A8C7D" FromRole="Member" ToRole="Borrowing" />
+  </EntityType>
+  <EntityType Name="Publisher">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="created_at" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Book" Relationship="Self.FK__Book__publisher___36B12243" FromRole="Publisher" ToRole="Book" />
+  </EntityType>
+  <Association Name="FK__Book__language_i__35BCFE0A">
+    <End Role="Language" Type="Self.Language" Multiplicity="1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="language_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Book__publisher___36B12243">
+    <End Role="Publisher" Type="Self.Publisher" Multiplicity="1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publisher">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="publisher_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookDetai__book___3A81B327">
+    <End Role="Book" Type="Self.Book" Multiplicity="1" />
+    <End Role="BookDetails" Type="Self.BookDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BookDetails">
+        <PropertyRef Name="book_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BookDetai__locat__3B75D760">
+    <End Role="Location" Type="Self.Location" Multiplicity="1" />
+    <End Role="BookDetails" Type="Self.BookDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BookDetails">
+        <PropertyRef Name="location_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Borrowing__bookd__412EB0B6">
+    <End Role="BookDetails" Type="Self.BookDetails" Multiplicity="1" />
+    <End Role="Borrowing" Type="Self.Borrowing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookDetails">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Borrowing">
+        <PropertyRef Name="bookdetails_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Borrowing__membe__403A8C7D">
+    <End Role="Member" Type="Self.Member" Multiplicity="1" />
+    <End Role="Borrowing" Type="Self.Borrowing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Borrowing">
+        <PropertyRef Name="member_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HovLibraryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Book" EntityType="Self.Book" />
+    <EntitySet Name="BookDetails" EntityType="Self.BookDetails" />
+    <EntitySet Name="Borrowing" EntityType="Self.Borrowing" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <EntitySet Name="Language" EntityType="Self.Language" />
+    <EntitySet Name="Location" EntityType="Self.Location" />
+    <EntitySet Name="Member" EntityType="Self.Member" />
+    <EntitySet Name="Publisher" EntityType="Self.Publisher" />
+    <AssociationSet Name="FK__Book__language_i__35BCFE0A" Association="Self.FK__Book__language_i__35BCFE0A">
+      <End Role="Language" EntitySet="Language" />
+      <End Role="Book" EntitySet="Book" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Book__publisher___36B12243" Association="Self.FK__Book__publisher___36B12243">
+      <End Role="Publisher" EntitySet="Publisher" />
+      <End Role="Book" EntitySet="Book" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookDetai__book___3A81B327" Association="Self.FK__BookDetai__book___3A81B327">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="BookDetails" EntitySet="BookDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BookDetai__locat__3B75D760" Association="Self.FK__BookDetai__locat__3B75D760">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="BookDetails" EntitySet="BookDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Borrowing__bookd__412EB0B6" Association="Self.FK__Borrowing__bookd__412EB0B6">
+      <End Role="BookDetails" EntitySet="BookDetails" />
+      <End Role="Borrowing" EntitySet="Borrowing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Borrowing__membe__403A8C7D" Association="Self.FK__Borrowing__membe__403A8C7D">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Borrowing" EntitySet="Borrowing" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
