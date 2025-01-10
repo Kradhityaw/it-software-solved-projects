@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MarathonDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DistanceKm" Type="int" />
+  </EntityType>
+  <EntityType Name="Participants">
+    <Key>
+      <PropertyRef Name="ParticipantID" />
+    </Key>
+    <Property Name="ParticipantID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Speed" Type="decimal" Precision="5" Scale="2" />
+  </EntityType>
+  <Association Name="FK__Participa__Event__267ABA7A">
+    <End Role="Events" Type="Self.Events" Multiplicity="0..1" />
+    <End Role="Participants" Type="Self.Participants" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Participants">
+        <PropertyRef Name="EventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MarathonDBModelStoreContainer">
+    <EntitySet Name="Events" EntityType="Self.Events" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Participants" EntityType="Self.Participants" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Participa__Event__267ABA7A" Association="Self.FK__Participa__Event__267ABA7A">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="Participants" EntitySet="Participants" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
