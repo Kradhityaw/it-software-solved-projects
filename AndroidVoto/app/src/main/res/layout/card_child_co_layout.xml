@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:background="@color/black">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cameraChecked" />
+
+    <ImageView
+        android:id="@id/cameraImage"
+        android:layout_marginTop="8dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingHorizontal="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cameraName"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera Name"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:gravity="center"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/cameraDecrement"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/cameraQty"
+                android:layout_marginHorizontal="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/cameraIncrement"
+                android:gravity="center"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/cameraPrice"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp0000"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
