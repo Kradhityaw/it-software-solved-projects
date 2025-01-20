@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MotorcycleRepairModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DetailProduct">
+    <Key>
+      <PropertyRef Name="TransactionNumber" />
+      <PropertyRef Name="ProductCode" />
+    </Key>
+    <Property Name="TransactionNumber" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ProductCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Amount" Type="Int32" />
+    <Property Name="Total" Type="Int32" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__DetailPro__Produ__33D4B598" FromRole="DetailProduct" ToRole="Products" />
+    <NavigationProperty Name="TransactionService" Relationship="Self.FK__DetailPro__Trans__34C8D9D1" FromRole="DetailProduct" ToRole="TransactionService" />
+  </EntityType>
+  <EntityType Name="DetailService">
+    <Key>
+      <PropertyRef Name="TransactionNumber" />
+      <PropertyRef Name="ServiceCode" />
+    </Key>
+    <Property Name="TransactionNumber" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ServiceCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Cost" Type="Int32" />
+    <NavigationProperty Name="MotorcycleServices" Relationship="Self.FK__DetailSer__Servi__300424B4" FromRole="DetailService" ToRole="MotorcycleServices" />
+    <NavigationProperty Name="TransactionService" Relationship="Self.FK__DetailSer__Trans__30F848ED" FromRole="DetailService" ToRole="TransactionService" />
+  </EntityType>
+  <EntityType Name="Mechanics">
+    <Key>
+      <PropertyRef Name="MechanicCode" />
+    </Key>
+    <Property Name="MechanicCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MechanicName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TransactionService" Relationship="Self.FK__Transacti__Mecha__2D27B809" FromRole="Mechanics" ToRole="TransactionService" />
+  </EntityType>
+  <EntityType Name="MotorcycleServices">
+    <Key>
+      <PropertyRef Name="ServiceCode" />
+    </Key>
+    <Property Name="ServiceCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ServiceName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Cost" Type="Int32" />
+    <NavigationProperty Name="DetailService" Relationship="Self.FK__DetailSer__Servi__300424B4" FromRole="MotorcycleServices" ToRole="DetailService" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductCode" />
+    </Key>
+    <Property Name="ProductCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Int32" />
+    <NavigationProperty Name="DetailProduct" Relationship="Self.FK__DetailPro__Produ__33D4B598" FromRole="Products" ToRole="DetailProduct" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TransactionService">
+    <Key>
+      <PropertyRef Name="TransactionNumber" />
+    </Key>
+    <Property Name="TransactionNumber" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TransactionDate" Type="DateTime" Precision="0" />
+    <Property Name="PoliceRegistrationNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Damage" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="TotalServiceCost" Type="Int32" />
+    <Property Name="TotalProductPrice" Type="Int32" />
+    <Property Name="TotalCharge" Type="Int32" />
+    <Property Name="Paid" Type="Int32" />
+    <Property Name="ChangeMoney" Type="Int32" />
+    <Property Name="UserCode" Type="String" MaxLength="9" FixedLength="true" Unicode="false" />
+    <Property Name="MechanicCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="DetailProduct" Relationship="Self.FK__DetailPro__Trans__34C8D9D1" FromRole="TransactionService" ToRole="DetailProduct" />
+    <NavigationProperty Name="DetailService" Relationship="Self.FK__DetailSer__Trans__30F848ED" FromRole="TransactionService" ToRole="DetailService" />
+    <NavigationProperty Name="Mechanics" Relationship="Self.FK__Transacti__Mecha__2D27B809" FromRole="TransactionService" ToRole="Mechanics" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Transacti__UserC__2C3393D0" FromRole="TransactionService" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserCode" />
+    </Key>
+    <Property Name="UserCode" Type="String" MaxLength="9" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TransactionService" Relationship="Self.FK__Transacti__UserC__2C3393D0" FromRole="Users" ToRole="TransactionService" />
+  </EntityType>
+  <Association Name="FK__DetailPro__Produ__33D4B598">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="DetailProduct" Type="Self.DetailProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductCode" />
+      </Principal>
+      <Dependent Role="DetailProduct">
+        <PropertyRef Name="ProductCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailPro__Trans__34C8D9D1">
+    <End Role="TransactionService" Type="Self.TransactionService" Multiplicity="1" />
+    <End Role="DetailProduct" Type="Self.DetailProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionService">
+        <PropertyRef Name="TransactionNumber" />
+      </Principal>
+      <Dependent Role="DetailProduct">
+        <PropertyRef Name="TransactionNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailSer__Servi__300424B4">
+    <End Role="MotorcycleServices" Type="Self.MotorcycleServices" Multiplicity="1" />
+    <End Role="DetailService" Type="Self.DetailService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotorcycleServices">
+        <PropertyRef Name="ServiceCode" />
+      </Principal>
+      <Dependent Role="DetailService">
+        <PropertyRef Name="ServiceCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetailSer__Trans__30F848ED">
+    <End Role="TransactionService" Type="Self.TransactionService" Multiplicity="1" />
+    <End Role="DetailService" Type="Self.DetailService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionService">
+        <PropertyRef Name="TransactionNumber" />
+      </Principal>
+      <Dependent Role="DetailService">
+        <PropertyRef Name="TransactionNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Transacti__Mecha__2D27B809">
+    <End Role="Mechanics" Type="Self.Mechanics" Multiplicity="0..1" />
+    <End Role="TransactionService" Type="Self.TransactionService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mechanics">
+        <PropertyRef Name="MechanicCode" />
+      </Principal>
+      <Dependent Role="TransactionService">
+        <PropertyRef Name="MechanicCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Transacti__UserC__2C3393D0">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="TransactionService" Type="Self.TransactionService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserCode" />
+      </Principal>
+      <Dependent Role="TransactionService">
+        <PropertyRef Name="UserCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MotorcycleRepairEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DetailProduct" EntityType="Self.DetailProduct" />
+    <EntitySet Name="DetailService" EntityType="Self.DetailService" />
+    <EntitySet Name="Mechanics" EntityType="Self.Mechanics" />
+    <EntitySet Name="MotorcycleServices" EntityType="Self.MotorcycleServices" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TransactionService" EntityType="Self.TransactionService" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK__DetailPro__Produ__33D4B598" Association="Self.FK__DetailPro__Produ__33D4B598">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="DetailProduct" EntitySet="DetailProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailPro__Trans__34C8D9D1" Association="Self.FK__DetailPro__Trans__34C8D9D1">
+      <End Role="TransactionService" EntitySet="TransactionService" />
+      <End Role="DetailProduct" EntitySet="DetailProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailSer__Servi__300424B4" Association="Self.FK__DetailSer__Servi__300424B4">
+      <End Role="MotorcycleServices" EntitySet="MotorcycleServices" />
+      <End Role="DetailService" EntitySet="DetailService" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetailSer__Trans__30F848ED" Association="Self.FK__DetailSer__Trans__30F848ED">
+      <End Role="TransactionService" EntitySet="TransactionService" />
+      <End Role="DetailService" EntitySet="DetailService" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Transacti__Mecha__2D27B809" Association="Self.FK__Transacti__Mecha__2D27B809">
+      <End Role="Mechanics" EntitySet="Mechanics" />
+      <End Role="TransactionService" EntitySet="TransactionService" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Transacti__UserC__2C3393D0" Association="Self.FK__Transacti__UserC__2C3393D0">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TransactionService" EntitySet="TransactionService" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

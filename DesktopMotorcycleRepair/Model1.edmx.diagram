@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3bb2247d639d47afb1c6548dee004c12" Name="Diagram1">
+        <EntityTypeShape EntityType="MotorcycleRepairModel.DetailProduct" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotorcycleRepairModel.DetailService" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotorcycleRepairModel.Mechanics" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotorcycleRepairModel.MotorcycleServices" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotorcycleRepairModel.Products" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotorcycleRepairModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotorcycleRepairModel.TransactionService" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotorcycleRepairModel.Users" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="MotorcycleRepairModel.FK__DetailPro__Produ__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="MotorcycleRepairModel.FK__DetailPro__Trans__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="MotorcycleRepairModel.FK__DetailSer__Servi__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="MotorcycleRepairModel.FK__DetailSer__Trans__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="MotorcycleRepairModel.FK__Transacti__Mecha__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="MotorcycleRepairModel.FK__Transacti__UserC__2C3393D0" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
