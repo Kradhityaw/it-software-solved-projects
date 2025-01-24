@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HovRailKioskModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="cityID" />
+          </Key>
+          <Property Name="cityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cityName" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Route">
+          <Key>
+            <PropertyRef Name="routeID" />
+          </Key>
+          <Property Name="routeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="routeName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="departureStationID" Type="int" Nullable="false" />
+          <Property Name="arrivalStationID" Type="int" Nullable="false" />
+          <Property Name="fixedPrice" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+          <Property Name="pricePerHour" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RouteDetail">
+          <Key>
+            <PropertyRef Name="routeDetailID" />
+          </Key>
+          <Property Name="routeDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="routeID" Type="int" Nullable="false" />
+          <Property Name="destinationStationID" Type="int" Nullable="false" />
+          <Property Name="stationSequenceNo" Type="int" Nullable="false" />
+          <Property Name="travelHour" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Schedule">
+          <Key>
+            <PropertyRef Name="scheduleID" />
+          </Key>
+          <Property Name="scheduleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="trainID" Type="int" Nullable="false" />
+          <Property Name="routeID" Type="int" Nullable="false" />
+          <Property Name="departureTime" Type="datetime" Nullable="false" />
+          <Property Name="createdAt" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Station">
+          <Key>
+            <PropertyRef Name="stationID" />
+          </Key>
+          <Property Name="stationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cityID" Type="int" Nullable="false" />
+          <Property Name="stationName" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ticket">
+          <Key>
+            <PropertyRef Name="ticketID" />
+          </Key>
+          <Property Name="ticketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="scheduleID" Type="int" Nullable="false" />
+          <Property Name="departureStationID" Type="int" Nullable="false" />
+          <Property Name="departureTime" Type="datetime" Nullable="false" />
+          <Property Name="arrivalStationID" Type="int" Nullable="false" />
+          <Property Name="arrivalTime" Type="datetime" Nullable="false" />
+          <Property Name="seatNumber" Type="int" Nullable="false" />
+          <Property Name="passengerName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="price" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="createdAt" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Train">
+          <Key>
+            <PropertyRef Name="trainID" />
+          </Key>
+          <Property Name="trainID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="trainName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="capacity" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Route__arrivalSt__2A4B4B5E">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="Route" Type="Self.Route" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="Route">
+              <PropertyRef Name="arrivalStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Route__departure__29572725">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="Route" Type="Self.Route" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="Route">
+              <PropertyRef Name="departureStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RouteDeta__desti__2E1BDC42">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="RouteDetail" Type="Self.RouteDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="RouteDetail">
+              <PropertyRef Name="destinationStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RouteDeta__route__2D27B809">
+          <End Role="Route" Type="Self.Route" Multiplicity="1" />
+          <End Role="RouteDetail" Type="Self.RouteDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Route">
+              <PropertyRef Name="routeID" />
+            </Principal>
+            <Dependent Role="RouteDetail">
+              <PropertyRef Name="routeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Schedule__routeI__34C8D9D1">
+          <End Role="Route" Type="Self.Route" Multiplicity="1" />
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Route">
+              <PropertyRef Name="routeID" />
+            </Principal>
+            <Dependent Role="Schedule">
+              <PropertyRef Name="routeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Schedule__trainI__33D4B598">
+          <End Role="Train" Type="Self.Train" Multiplicity="1" />
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Train">
+              <PropertyRef Name="trainID" />
+            </Principal>
+            <Dependent Role="Schedule">
+              <PropertyRef Name="trainID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Station__cityID__267ABA7A">
+          <End Role="City" Type="Self.City" Multiplicity="1" />
+          <End Role="Station" Type="Self.Station" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="cityID" />
+            </Principal>
+            <Dependent Role="Station">
+              <PropertyRef Name="cityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ticket__arrivalS__3A81B327">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="Ticket">
+              <PropertyRef Name="arrivalStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ticket__departur__398D8EEE">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="Ticket">
+              <PropertyRef Name="departureStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ticket__schedule__38996AB5">
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Schedule">
+              <PropertyRef Name="scheduleID" />
+            </Principal>
+            <Dependent Role="Ticket">
+              <PropertyRef Name="scheduleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HovRailKioskModelStoreContainer">
+          <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Route" EntityType="Self.Route" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RouteDetail" EntityType="Self.RouteDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Schedule" EntityType="Self.Schedule" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Station" EntityType="Self.Station" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ticket" EntityType="Self.Ticket" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Train" EntityType="Self.Train" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Route__arrivalSt__2A4B4B5E" Association="Self.FK__Route__arrivalSt__2A4B4B5E">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="Route" EntitySet="Route" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Route__departure__29572725" Association="Self.FK__Route__departure__29572725">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="Route" EntitySet="Route" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RouteDeta__desti__2E1BDC42" Association="Self.FK__RouteDeta__desti__2E1BDC42">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="RouteDetail" EntitySet="RouteDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RouteDeta__route__2D27B809" Association="Self.FK__RouteDeta__route__2D27B809">
+            <End Role="Route" EntitySet="Route" />
+            <End Role="RouteDetail" EntitySet="RouteDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Schedule__routeI__34C8D9D1" Association="Self.FK__Schedule__routeI__34C8D9D1">
+            <End Role="Route" EntitySet="Route" />
+            <End Role="Schedule" EntitySet="Schedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Schedule__trainI__33D4B598" Association="Self.FK__Schedule__trainI__33D4B598">
+            <End Role="Train" EntitySet="Train" />
+            <End Role="Schedule" EntitySet="Schedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Station__cityID__267ABA7A" Association="Self.FK__Station__cityID__267ABA7A">
+            <End Role="City" EntitySet="City" />
+            <End Role="Station" EntitySet="Station" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ticket__arrivalS__3A81B327" Association="Self.FK__Ticket__arrivalS__3A81B327">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ticket__departur__398D8EEE" Association="Self.FK__Ticket__departur__398D8EEE">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ticket__schedule__38996AB5" Association="Self.FK__Ticket__schedule__38996AB5">
+            <End Role="Schedule" EntitySet="Schedule" />
+            <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HovRailKioskModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="cityID" />
+          </Key>
+          <Property Name="cityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cityName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Station" Relationship="Self.FK__Station__cityID__267ABA7A" FromRole="City" ToRole="Station" />
+        </EntityType>
+        <EntityType Name="Route">
+          <Key>
+            <PropertyRef Name="routeID" />
+          </Key>
+          <Property Name="routeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="routeName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="departureStationID" Type="Int32" Nullable="false" />
+          <Property Name="arrivalStationID" Type="Int32" Nullable="false" />
+          <Property Name="fixedPrice" Type="Decimal" Precision="11" Scale="2" Nullable="false" />
+          <Property Name="pricePerHour" Type="Decimal" Precision="11" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Station" Relationship="Self.FK__Route__arrivalSt__2A4B4B5E" FromRole="Route" ToRole="Station" />
+          <NavigationProperty Name="Station1" Relationship="Self.FK__Route__departure__29572725" FromRole="Route" ToRole="Station" />
+          <NavigationProperty Name="RouteDetail" Relationship="Self.FK__RouteDeta__route__2D27B809" FromRole="Route" ToRole="RouteDetail" />
+          <NavigationProperty Name="Schedule" Relationship="Self.FK__Schedule__routeI__34C8D9D1" FromRole="Route" ToRole="Schedule" />
+        </EntityType>
+        <EntityType Name="RouteDetail">
+          <Key>
+            <PropertyRef Name="routeDetailID" />
+          </Key>
+          <Property Name="routeDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="routeID" Type="Int32" Nullable="false" />
+          <Property Name="destinationStationID" Type="Int32" Nullable="false" />
+          <Property Name="stationSequenceNo" Type="Int32" Nullable="false" />
+          <Property Name="travelHour" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Route" Relationship="Self.FK__RouteDeta__route__2D27B809" FromRole="RouteDetail" ToRole="Route" />
+          <NavigationProperty Name="Station" Relationship="Self.FK__RouteDeta__desti__2E1BDC42" FromRole="RouteDetail" ToRole="Station" />
+        </EntityType>
+        <EntityType Name="Schedule">
+          <Key>
+            <PropertyRef Name="scheduleID" />
+          </Key>
+          <Property Name="scheduleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="trainID" Type="Int32" Nullable="false" />
+          <Property Name="routeID" Type="Int32" Nullable="false" />
+          <Property Name="departureTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="createdAt" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Route" Relationship="Self.FK__Schedule__routeI__34C8D9D1" FromRole="Schedule" ToRole="Route" />
+          <NavigationProperty Name="Train" Relationship="Self.FK__Schedule__trainI__33D4B598" FromRole="Schedule" ToRole="Train" />
+          <NavigationProperty Name="Ticket" Relationship="Self.FK__Ticket__schedule__38996AB5" FromRole="Schedule" ToRole="Ticket" />
+        </EntityType>
+        <EntityType Name="Station">
+          <Key>
+            <PropertyRef Name="stationID" />
+          </Key>
+          <Property Name="stationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cityID" Type="Int32" Nullable="false" />
+          <Property Name="stationName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="City" Relationship="Self.FK__Station__cityID__267ABA7A" FromRole="Station" ToRole="City" />
+          <NavigationProperty Name="Route" Relationship="Self.FK__Route__arrivalSt__2A4B4B5E" FromRole="Station" ToRole="Route" />
+          <NavigationProperty Name="Route1" Relationship="Self.FK__Route__departure__29572725" FromRole="Station" ToRole="Route" />
+          <NavigationProperty Name="RouteDetail" Relationship="Self.FK__RouteDeta__desti__2E1BDC42" FromRole="Station" ToRole="RouteDetail" />
+          <NavigationProperty Name="Ticket" Relationship="Self.FK__Ticket__arrivalS__3A81B327" FromRole="Station" ToRole="Ticket" />
+          <NavigationProperty Name="Ticket1" Relationship="Self.FK__Ticket__departur__398D8EEE" FromRole="Station" ToRole="Ticket" />
+        </EntityType>
+        <EntityType Name="Ticket">
+          <Key>
+            <PropertyRef Name="ticketID" />
+          </Key>
+          <Property Name="ticketID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="scheduleID" Type="Int32" Nullable="false" />
+          <Property Name="departureStationID" Type="Int32" Nullable="false" />
+          <Property Name="departureTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="arrivalStationID" Type="Int32" Nullable="false" />
+          <Property Name="arrivalTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="seatNumber" Type="Int32" Nullable="false" />
+          <Property Name="passengerName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="price" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="createdAt" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Schedule" Relationship="Self.FK__Ticket__schedule__38996AB5" FromRole="Ticket" ToRole="Schedule" />
+          <NavigationProperty Name="Station" Relationship="Self.FK__Ticket__arrivalS__3A81B327" FromRole="Ticket" ToRole="Station" />
+          <NavigationProperty Name="Station1" Relationship="Self.FK__Ticket__departur__398D8EEE" FromRole="Ticket" ToRole="Station" />
+        </EntityType>
+        <EntityType Name="Train">
+          <Key>
+            <PropertyRef Name="trainID" />
+          </Key>
+          <Property Name="trainID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="trainName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="capacity" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Schedule" Relationship="Self.FK__Schedule__trainI__33D4B598" FromRole="Train" ToRole="Schedule" />
+        </EntityType>
+        <Association Name="FK__Station__cityID__267ABA7A">
+          <End Role="City" Type="Self.City" Multiplicity="1" />
+          <End Role="Station" Type="Self.Station" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="cityID" />
+            </Principal>
+            <Dependent Role="Station">
+              <PropertyRef Name="cityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Route__arrivalSt__2A4B4B5E">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="Route" Type="Self.Route" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="Route">
+              <PropertyRef Name="arrivalStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Route__departure__29572725">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="Route" Type="Self.Route" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="Route">
+              <PropertyRef Name="departureStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RouteDeta__route__2D27B809">
+          <End Role="Route" Type="Self.Route" Multiplicity="1" />
+          <End Role="RouteDetail" Type="Self.RouteDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Route">
+              <PropertyRef Name="routeID" />
+            </Principal>
+            <Dependent Role="RouteDetail">
+              <PropertyRef Name="routeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Schedule__routeI__34C8D9D1">
+          <End Role="Route" Type="Self.Route" Multiplicity="1" />
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Route">
+              <PropertyRef Name="routeID" />
+            </Principal>
+            <Dependent Role="Schedule">
+              <PropertyRef Name="routeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RouteDeta__desti__2E1BDC42">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="RouteDetail" Type="Self.RouteDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="RouteDetail">
+              <PropertyRef Name="destinationStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Schedule__trainI__33D4B598">
+          <End Role="Train" Type="Self.Train" Multiplicity="1" />
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Train">
+              <PropertyRef Name="trainID" />
+            </Principal>
+            <Dependent Role="Schedule">
+              <PropertyRef Name="trainID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ticket__schedule__38996AB5">
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Schedule">
+              <PropertyRef Name="scheduleID" />
+            </Principal>
+            <Dependent Role="Ticket">
+              <PropertyRef Name="scheduleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ticket__arrivalS__3A81B327">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="Ticket">
+              <PropertyRef Name="arrivalStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ticket__departur__398D8EEE">
+          <End Role="Station" Type="Self.Station" Multiplicity="1" />
+          <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Station">
+              <PropertyRef Name="stationID" />
+            </Principal>
+            <Dependent Role="Ticket">
+              <PropertyRef Name="departureStationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HovRailKioskEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="City" EntityType="Self.City" />
+          <EntitySet Name="Route" EntityType="Self.Route" />
+          <EntitySet Name="RouteDetail" EntityType="Self.RouteDetail" />
+          <EntitySet Name="Schedule" EntityType="Self.Schedule" />
+          <EntitySet Name="Station" EntityType="Self.Station" />
+          <EntitySet Name="Ticket" EntityType="Self.Ticket" />
+          <EntitySet Name="Train" EntityType="Self.Train" />
+          <AssociationSet Name="FK__Station__cityID__267ABA7A" Association="Self.FK__Station__cityID__267ABA7A">
+            <End Role="City" EntitySet="City" />
+            <End Role="Station" EntitySet="Station" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Route__arrivalSt__2A4B4B5E" Association="Self.FK__Route__arrivalSt__2A4B4B5E">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="Route" EntitySet="Route" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Route__departure__29572725" Association="Self.FK__Route__departure__29572725">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="Route" EntitySet="Route" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RouteDeta__route__2D27B809" Association="Self.FK__RouteDeta__route__2D27B809">
+            <End Role="Route" EntitySet="Route" />
+            <End Role="RouteDetail" EntitySet="RouteDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Schedule__routeI__34C8D9D1" Association="Self.FK__Schedule__routeI__34C8D9D1">
+            <End Role="Route" EntitySet="Route" />
+            <End Role="Schedule" EntitySet="Schedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RouteDeta__desti__2E1BDC42" Association="Self.FK__RouteDeta__desti__2E1BDC42">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="RouteDetail" EntitySet="RouteDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Schedule__trainI__33D4B598" Association="Self.FK__Schedule__trainI__33D4B598">
+            <End Role="Train" EntitySet="Train" />
+            <End Role="Schedule" EntitySet="Schedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ticket__schedule__38996AB5" Association="Self.FK__Ticket__schedule__38996AB5">
+            <End Role="Schedule" EntitySet="Schedule" />
+            <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ticket__arrivalS__3A81B327" Association="Self.FK__Ticket__arrivalS__3A81B327">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ticket__departur__398D8EEE" Association="Self.FK__Ticket__departur__398D8EEE">
+            <End Role="Station" EntitySet="Station" />
+            <End Role="Ticket" EntitySet="Ticket" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HovRailKioskModelStoreContainer" CdmEntityContainer="HovRailKioskEntities">
+          <EntitySetMapping Name="City">
+            <EntityTypeMapping TypeName="HovRailKioskModel.City">
+              <MappingFragment StoreEntitySet="City">
+                <ScalarProperty Name="cityID" ColumnName="cityID" />
+                <ScalarProperty Name="cityName" ColumnName="cityName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Route">
+            <EntityTypeMapping TypeName="HovRailKioskModel.Route">
+              <MappingFragment StoreEntitySet="Route">
+                <ScalarProperty Name="routeID" ColumnName="routeID" />
+                <ScalarProperty Name="routeName" ColumnName="routeName" />
+                <ScalarProperty Name="departureStationID" ColumnName="departureStationID" />
+                <ScalarProperty Name="arrivalStationID" ColumnName="arrivalStationID" />
+                <ScalarProperty Name="fixedPrice" ColumnName="fixedPrice" />
+                <ScalarProperty Name="pricePerHour" ColumnName="pricePerHour" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RouteDetail">
+            <EntityTypeMapping TypeName="HovRailKioskModel.RouteDetail">
+              <MappingFragment StoreEntitySet="RouteDetail">
+                <ScalarProperty Name="routeDetailID" ColumnName="routeDetailID" />
+                <ScalarProperty Name="routeID" ColumnName="routeID" />
+                <ScalarProperty Name="destinationStationID" ColumnName="destinationStationID" />
+                <ScalarProperty Name="stationSequenceNo" ColumnName="stationSequenceNo" />
+                <ScalarProperty Name="travelHour" ColumnName="travelHour" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Schedule">
+            <EntityTypeMapping TypeName="HovRailKioskModel.Schedule">
+              <MappingFragment StoreEntitySet="Schedule">
+                <ScalarProperty Name="scheduleID" ColumnName="scheduleID" />
+                <ScalarProperty Name="trainID" ColumnName="trainID" />
+                <ScalarProperty Name="routeID" ColumnName="routeID" />
+                <ScalarProperty Name="departureTime" ColumnName="departureTime" />
+                <ScalarProperty Name="createdAt" ColumnName="createdAt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Station">
+            <EntityTypeMapping TypeName="HovRailKioskModel.Station">
+              <MappingFragment StoreEntitySet="Station">
+                <ScalarProperty Name="stationID" ColumnName="stationID" />
+                <ScalarProperty Name="cityID" ColumnName="cityID" />
+                <ScalarProperty Name="stationName" ColumnName="stationName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ticket">
+            <EntityTypeMapping TypeName="HovRailKioskModel.Ticket">
+              <MappingFragment StoreEntitySet="Ticket">
+                <ScalarProperty Name="ticketID" ColumnName="ticketID" />
+                <ScalarProperty Name="scheduleID" ColumnName="scheduleID" />
+                <ScalarProperty Name="departureStationID" ColumnName="departureStationID" />
+                <ScalarProperty Name="departureTime" ColumnName="departureTime" />
+                <ScalarProperty Name="arrivalStationID" ColumnName="arrivalStationID" />
+                <ScalarProperty Name="arrivalTime" ColumnName="arrivalTime" />
+                <ScalarProperty Name="seatNumber" ColumnName="seatNumber" />
+                <ScalarProperty Name="passengerName" ColumnName="passengerName" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="createdAt" ColumnName="createdAt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Train">
+            <EntityTypeMapping TypeName="HovRailKioskModel.Train">
+              <MappingFragment StoreEntitySet="Train">
+                <ScalarProperty Name="trainID" ColumnName="trainID" />
+                <ScalarProperty Name="trainName" ColumnName="trainName" />
+                <ScalarProperty Name="capacity" ColumnName="capacity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

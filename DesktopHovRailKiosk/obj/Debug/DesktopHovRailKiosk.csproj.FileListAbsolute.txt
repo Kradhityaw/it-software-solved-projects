@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\DesktopHovRailKiosk\bin\Debug\DesktopHovRailKiosk.exe.config
+C:\Users\USER\source\repos\DesktopHovRailKiosk\bin\Debug\DesktopHovRailKiosk.exe
+C:\Users\USER\source\repos\DesktopHovRailKiosk\bin\Debug\DesktopHovRailKiosk.pdb
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.Form1.resources
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.Properties.Resources.resources
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.exe
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.pdb
+C:\Users\USER\source\repos\DesktopHovRailKiosk\bin\Debug\EntityFramework.dll
+C:\Users\USER\source\repos\DesktopHovRailKiosk\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\source\repos\DesktopHovRailKiosk\bin\Debug\EntityFramework.xml
+C:\Users\USER\source\repos\DesktopHovRailKiosk\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopH.B8FD1BB4.Up2Date
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.Form2.resources
+C:\Users\USER\source\repos\DesktopHovRailKiosk\obj\Debug\DesktopHovRailKiosk.Form3.resources

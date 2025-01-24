@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75e6ff6030ac4734aea538e2c808a2e5" Name="Diagram1">
+        <EntityTypeShape EntityType="HovRailKioskModel.City" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HovRailKioskModel.Route" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HovRailKioskModel.RouteDetail" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HovRailKioskModel.Schedule" Width="1.5" PointX="10.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HovRailKioskModel.Station" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HovRailKioskModel.Ticket" Width="1.5" PointX="12.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HovRailKioskModel.Train" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="HovRailKioskModel.FK__Station__cityID__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__Route__arrivalSt__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__Route__departure__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__RouteDeta__route__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__Schedule__routeI__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__RouteDeta__desti__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__Schedule__trainI__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__Ticket__schedule__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__Ticket__arrivalS__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="HovRailKioskModel.FK__Ticket__departur__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
