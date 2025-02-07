@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MobileEsemkaGym" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/brown</item>
+        <item name="android:statusBarColor">@color/brown</item>
+    </style>
+
+    <style name="Theme.MobileEsemkaGym" parent="Base.Theme.MobileEsemkaGym" />
+</resources>
